@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="0dip"
+                android:background="@color/white"
+                tools:context=".activities.VerificationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/arcfulllogo">
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+        android:id="@+id/textWrapper">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:gravity="center"
+            android:text="@string/sending_sms"
+            android:textColor="@color/grey"
+            android:textSize="18sp" />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/numberText"
+                android:layout_gravity="center"
+                android:textColor="@color/primaryColor"
+                android:textSize="18sp"/>
+
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+            <LinearLayout android:id="@+id/inputContainer" android:layout_width="fill_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical" android:layout_centerHorizontal="true"
+                          android:visibility="gone">
+                <TextView
+                        android:id="@+id/enterToken" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="18sp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text=""/>
+
+                <EditText android:id="@+id/inputCode"
+                    android:layout_width="170dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:layout_margin="10dp"/>
+                <Button
+                        android:id="@+id/codeInputButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_horizontal"
+                        android:minHeight="56dp"
+                        android:textColor="#ffffff"
+                        android:textAllCaps="true"
+                        android:textSize="20sp"
+                    android:text="ENTER TO ARC APP"
+                    android:background="@drawable/button_capsule"
+                    android:backgroundTint="@color/colorAccent"
+                        android:onClick="onSubmitClicked"/>
+            </LinearLayout>
+
+            <ProgressBar
+                    android:id="@+id/progressIndicator"
+                    android:indeterminateDrawable="@drawable/progress"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:indeterminate="false"
+                    android:indeterminateDuration="3000"
+                    android:layout_gravity="center"
+                    android:layout_centerInParent="true"
+                    android:visibility="invisible"/>
+
+            <ImageView
+                    android:id="@+id/checkmarkImage"
+                    android:layout_width="240dp"
+                    android:layout_height="240dp"
+                    android:background="@drawable/tickinsidecircle"
+                    android:layout_centerInParent="true"
+                android:layout_marginBottom="20dp"
+                    android:visibility="invisible"
+                    />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="ENTER TO ARC APP"
+                android:background="@drawable/button_capsule"
+                android:textColor="#ffffff"
+                android:layout_below="@+id/checkmarkImage"
+                android:id="@+id/btn_activity_verfication_proceed"
+                android:visibility="invisible"/>
+        </RelativeLayout>
+
+        <TextView android:id="@+id/progressText"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:text="@string/inprogress"
+                  android:textAllCaps="true"
+                  android:gravity="center_horizontal"
+                  android:textColor="@color/sinch_light_grey"
+                  android:textSize="22sp"
+                  android:paddingBottom="20dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

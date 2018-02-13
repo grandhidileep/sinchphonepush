@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="0dip"
+                >
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="false"
+            android:orientation="vertical"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp" android:id="@+id/numberInputLayout">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Enter Mobile Number To Call"
+                android:id="@+id/textView" android:layout_gravity="center_horizontal"
+                android:textColor="@color/primaryColor" android:textSize="17sp"/>
+        <EditText
+                android:id="@+id/callName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textSize="32sp"
+                android:padding="5dp"
+                android:textColor="@color/primaryColor"
+                android:background="@drawable/inputbox"
+                android:inputType="phone">
+
+            <requestFocus/>
+        </EditText>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/numberInputLayout"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="24dp">
+
+        <TextView
+            android:id="@+id/infoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Logged in as: "
+            android:textAllCaps="true"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/primaryColor" />
+
+        <TextView
+            android:id="@+id/loggedInName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dileep"
+            android:textAllCaps="true"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/primaryColor"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <RelativeLayout android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentBottom="true"
+                  android:layout_centerHorizontal="true">
+
+        <ImageButton
+                android:id="@+id/callButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/phonecall"
+                android:minHeight="56dp"
+                android:minWidth="132dp"
+                android:layout_centerHorizontal="true"/>
+        <ImageButton
+            android:id="@+id/videoCallButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/callButton"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/videocall"
+            android:textAllCaps="true"
+            android:minHeight="56dp"
+            android:minWidth="132dp"
+            android:layout_centerHorizontal="true"/>
+        <!--<Button-->
+                <!--android:id="@+id/stopButton"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/callButton"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:background="@android:color/transparent"-->
+                <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+                <!--android:textColor="@color/primaryColor"-->
+                <!--android:textAllCaps="true"-->
+                <!--android:text="Stop service" android:layout_centerHorizontal="true"/>-->
+
+    </RelativeLayout>
+
+</RelativeLayout>

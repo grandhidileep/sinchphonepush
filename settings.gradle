@@ -1,0 +1,1 @@
+include ':app', ':sinch-android-rtc-3.12.3', ':sinch-android-verification-1.5.0'

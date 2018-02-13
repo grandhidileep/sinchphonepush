@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.arc_mobile.arcmobile">
+    <uses-feature
+        android:name="android.hardware.microphone" android:required="false"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.READ_CALL_LOG"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ANSWER_PHONE_CALLS"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <permission android:name="com.arc_mobile.arcmobile.permission.C2D_MESSAGE"
+        android:protectionLevel="signature"/>
+    <uses-permission android:name="com.arc_mobile.arcmobile.permission.C2D_MESSAGE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:name=".utils.MyApplication"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+        <service android:name=".services.SinchServicePush"></service>
+        <service
+            android:name=".fcm.FcmListenerService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".fcm.MyFbInsanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:name=".activities.MainActivity" android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".activities.VerificationActivity" android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".activities.CallScreenActivity" android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".activities.IncomingCallScreenActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".activities.PlaceCallActivity" android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".activities.InvokeVoiceVideoCallListener" android:screenOrientation="portrait" android:noHistory="true"></activity>
+        <activity android:name=".activities.VideoCallScreenActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".activities.DashBoardActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".activities.MessagingActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".activities.PricingActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".activities.CallHistory" android:screenOrientation="portrait"></activity>
+        <activity android:name=".activities.DialerActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".activities.WalletActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".activities.MessagingListActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".activities.ContactsActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".activities.CallNMessageOptionsActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".activities.LauncherActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ARC Mobile</string>
+    <string name="enterphonenumber">Enter Your Mobile Number</string>
+    <string name="selectcountry">Select Your Country</string>
+    <string name="sending_sms">We have sent a verification code to </string>
+    <string name="flashcalling">Please wait while we give a missed call to</string>
+    <string name="inprogress">Verification is in progress</string>
+    <string name="verified">Verification Successful</string>
+    <string name="failed">Verification Failed</string>
+    <string name="sms_enter_code">Please enter the code you have received</string>
+    <string name="flashcall_enter_cli">Please enter the phone number you received a missed call from</string>
+    <string name="default_notification_channel_id">Instant Message</string>
+
+</resources>

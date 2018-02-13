@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="45dp"
+    android:text="name"
+        android:gravity="center"
+    android:id="@+id/tv_callnmsg_name"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="45dp"
+        android:text="phone"
+        android:gravity="center"
+        android:id="@+id/tv_callnmsg_phone"
+        android:layout_marginBottom="100dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:id="@+id/img_button_voice_call"
+            android:background="@drawable/phonecall"/>
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:id="@+id/img_button_video_call"
+            android:background="@drawable/videocall"/>
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:id="@+id/img_button_message"
+            android:background="@drawable/envelope"/>
+    </LinearLayout>
+
+
+</LinearLayout>

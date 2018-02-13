@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "664072275546",
+    "firebase_url": "https://arc-mobile-f2e42.firebaseio.com",
+    "project_id": "arc-mobile-f2e42",
+    "storage_bucket": "arc-mobile-f2e42.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:664072275546:android:42c77786134c910b",
+        "android_client_info": {
+          "package_name": "com.arc_mobile.arcmobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "664072275546-1rt554to3b6nltq670qb3l5t2cd6cbtt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgrO7v-PqsBFhU5Si7I11_fN5U8RzrsVg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

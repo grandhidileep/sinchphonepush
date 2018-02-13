@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/arcfulllogo">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingTop="110dp">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btn_activity_dash_call"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:backgroundTint="@color/colorAccent"
+                    android:layout_margin="13dp"
+                    android:background="@drawable/phone_receiver" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Call"
+                    android:textColor="@color/grey" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btn_messaging"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="13dp"
+                    android:backgroundTint="@color/colorAccent"
+                    android:background="@drawable/envelope" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Messaging"
+                    android:textColor="@color/grey" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btn_wallet"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="13dp"
+                    android:backgroundTint="@color/colorAccent"
+                    android:background="@drawable/wallet" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Wallet"
+                    android:textColor="@color/grey" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingTop="30dp">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btn_call_history"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="13dp"
+                    android:backgroundTint="@color/colorAccent"
+                    android:background="@drawable/history"
+                    android:paddingLeft="13dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Call History"
+                    android:textColor="@color/grey" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btn_pricing"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="13dp"
+                    android:backgroundTint="@color/colorAccent"
+                    android:background="@drawable/price_tag" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Bundles"
+                    android:textColor="@color/grey" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btn_customer_service"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="13dp"
+                    android:backgroundTint="@color/colorAccent"
+                    android:background="@drawable/customer_service" />
+
+                <TextView
+                    android:id="@+id/btn_help"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Help"
+                    android:textColor="@color/grey" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/mLlayoutBottomButtons"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+
+        android:layout_alignParentBottom="true"
+        android:background="#f8f8f8"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_home_button"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="15dp"
+                android:backgroundTint="@color/colorAccent"
+                android:background="@drawable/home" />
+
+            <ImageButton
+                android:id="@+id/btn_history_bottom"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="15dp"
+                android:backgroundTint="@color/colorAccent"
+                android:background="@drawable/history" />
+
+            <ImageButton
+                android:id="@+id/btn_dialer_bottom"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="15dp"
+                android:backgroundTint="@color/colorAccent"
+                android:background="@drawable/dial" />
+
+            <ImageButton
+                android:id="@+id/btn_phone_book_bottom"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="15dp"
+                android:backgroundTint="@color/colorAccent"
+                android:background="@drawable/phone_book" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
